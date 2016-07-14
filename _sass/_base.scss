@@ -1,3 +1,10 @@
+h1,h2,h3{
+    @include titleFont;
+}
+body, p
+{
+    @include bodyFont;
+}
 .site-header
 {
    
@@ -55,4 +62,5 @@ section
     background:$light-gray;
     height:100vh;
     padding:10vh 10vw;
+    color:@gray-dark;
 }
