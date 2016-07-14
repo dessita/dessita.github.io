@@ -4,7 +4,11 @@ h1,h2,h3{
 body, p
 {
     @include bodyFont;
+    font-weight: 300;
+    font-size:22px;
+
 }
+
 .site-header
 {
    
@@ -62,5 +66,22 @@ section
     background:$light-gray;
     height:100vh;
     padding:10vh 10vw;
-    color:@gray-dark;
+    color: $gray-dark;
+    h3{
+        font-size:50px;        
+        color:$dark-blue;
+    }
+    
+    p{
+            color: darken($white,60%);
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+.home{
+    section .right
+    {
+        text-align:left;
+    }
+    }
 }
