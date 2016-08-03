@@ -6,7 +6,9 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+    "jquery.fullPage.scss",
     "bootstrap",
-      "mixins",
-      "variables",
+    "icons",
+    "mixins",
+    "variables",
     "base"; 
