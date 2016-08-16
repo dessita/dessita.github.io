@@ -11,6 +11,16 @@ body, p
 a:hover{   
     text-decoration: none;
 }
+body>svg{
+    display: none;
+}
+header
+{
+    position:fixed;
+    top:0;
+    z-index: 2;
+    
+}
 .learn-more-link .glyphicon
 {
     font-size: 16px;
@@ -73,24 +83,31 @@ a:hover{
     font-size: 8vw;
 } 
 
-.home
+
+
+.icon
 {
-    
+    @include square(50px);
+    float:left;
+    display: inline;
+    padding:0 5px;
+    fill:#464646;
 }
-
-
 .section
 {    
-    margin-left:-40px;
-    margin-right:-40px;
+
     background:$light-gray;
     &.home
     {
+         background:none;
         padding:80px 40px;
-    position:relative;
-    z-index: 0;
-    text-align: center;
-    color:$white;
+        position:relative;
+        z-index: 0;
+        text-align: center;
+         p,.handwriting {
+              color:$white;
+        }
+      
     height:90vh;
     .introduction
     {

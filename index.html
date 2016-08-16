@@ -1,32 +1,52 @@
 ---
 layout: default
 ---
-
-<div id="fullpage" class="home container-fluid">
+ <div class="background-img"></div>
+<div id="fullpage" class="home ">
 <div class="section home">
+    
   <a class="site-title" href="{{ site.baseurl }}/" alt=">{{ site.title }}"><div class="logo"></div>
     </a>   
-    <p class="introduction">Hello, I'm Desislava Slavkova &amp; I do<br/><span class="large-text"> UX DESIGN &amp;BUILD</span><br/>responsive Web apps and Websites<div class="handwriting">...and I love it!</div  ></p>
+    <p class="introduction">Hello, I'm Desislava Slavkova &amp; I do<br/><span class="large-text"> UX DESIGN &amp; BUILD</span><br/>responsive Web Apps<div class="handwriting">...and I love it!</div  ></p>
 
- <div class="background-img"></div>
+
 </div>
 
-<div class="section row">
-
+<div class="section ">
+   <div class="slide" data-anchor="slide1">
     <h2>RECENT WORK</h2>
         
-    ">
-            <img src="assets/img/MoneyMatch.png" class="col-xs-12 col-sm-6"></img>
-        <div class="col-xs-12 col-sm-6 right">    
+
+            <img src="assets/img/MoneyMatch.png" class="col-xs-12 col-sm-8"></img>
+        <div class="col-xs-12 col-sm-4 right">    
             <h3>Money Match</h3>
-        
+        <div>
+             <svg class="icon design">
+        <use xlink:href="#svg-sprite_design"></use>
+      </svg>
+            <svg class="icon js">
+        <use xlink:href="#svg-sprite_javaScript"></use>
+      </svg>
+            
+     <svg class="icon less">
+        <use xlink:href="#svg-sprite_less"></use>
+      </svg>
+            
+             <svg class="icon html">
+        <use xlink:href="#svg-sprite_html"></use>
+      </svg>
+            
+         
+            <div class="clearfix"></div>
+            </div>
             <p>Responsive Web app to encourage students, that participate in the federal program for Student Loan to save for their tuition and follow their saving progress.</p>
             
             <a href="#" class="learn-more-link hvr-underline-from-left"> Learn More <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
-       
 </div>
-<div class="section row">
+         <div class="slide" data-anchor="slide2"> Slide 2 </div>
+</div>
+<div class="section ">
            
         <div class="col-xs-12 col-sm-6 left ">    
             <h3>Dynamic Dashboard</h3>
@@ -38,9 +58,10 @@ layout: default
      <img src="assets/images/dynamicDashboard.png" class="col-xs-12 col-sm-6" right></img>
         </div>
 
-<div class="section row">
-            <img src="assets/images/financialApps.png" class="col-xs-12 col-sm-6"></img>
-        <div class="col-xs-12 col-sm-6 right">    
+<div class="section ">
+        <div class="slide"> 
+     <img src="assets/images/financialApps.png" class="col-xs-12 col-sm-8"></img>
+        <div class="col-xs-12 col-sm-4 right">    
             <h3>FinancialApps</h3>
         
             <p>Responsive Web app to encourage students, that participate in the federal program for Student Loan to save for their tuition and follow their saving progress.</p>
@@ -48,5 +69,10 @@ layout: default
             <a href="#" class="learn-more-link hvr-underline-from-left"> Learn More <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
         </div>
+    </div>
+    <div class="slide"> Slide 2 </div>
+    <div class="slide"> Slide 3 </div>
+    <div class="slide"> Slide 4 </div>
+           
      
 </div>
