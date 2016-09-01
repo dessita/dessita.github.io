@@ -95,8 +95,9 @@ header
 }
 .section
 {    
-
+    color: $gray-dark;
     background:$light-gray;
+    box-sizing:border-box;
     &.home
     {
          background:none;
@@ -108,7 +109,7 @@ header
               color:$white;
         }
       
-    height:90vh;
+  
     .introduction
     {
       font-size:3.8vw;
@@ -119,17 +120,25 @@ header
         }
     }
     }
+    &:nth-child(even)
+        {
+        
+            img{
+                float:right;
+            }
+        }
     
   h2{
         font-size:30px;        
         color:darken($white,40%);
         padding-top:40px;
       font-weight: normal;
+      text-align: center;
     
     }
-      padding:10vh 10vw;
 
-    color: $gray-dark;
+
+
     h3{
         font-size:30px;        
         color:$dark-blue;
@@ -182,4 +191,9 @@ header
         text-align:right;
     }
     } 
+    //Full Page custom styles
+    .fp-tableCell
+    {
+          padding:0 90px;
+    }
 }
