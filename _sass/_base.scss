@@ -60,12 +60,11 @@ header
 .logo {
     width:280px;
     height:104px;
-    
+   fill:$white;
     margin-left:auto;
     margin-right:auto;
-   background-size:contain;
-    background-repeat:no-repeat;
-  @include dessita;
+
+
 }
 .background-img
 {
@@ -104,7 +103,7 @@ header
     &.home
     {
          background:none;
-        padding:80px 40px;
+    
         position:relative;
         z-index: 0;
         text-align: center;
@@ -209,27 +208,31 @@ header
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-.home{
-    section .right
+
+    .section{
+      .right
     {
         text-align:left;
     }
-     section .left
+         .left
     {
         text-align:right;
     }
-    } 
-    
-    .section{
-      
         h2{
                 margin-bottom:60px;
                 font-size:50px;
             }
+        &.home{
+            .logo{
+                fill:#212304;
+                margin-bottom:20vh;
+            }
+            
+        }
         &.about-me
         {
             .fp-tableCell{
-                padding:0 300px;
+                padding:0 20vw;
             }
         }
         &.my-projects
@@ -240,7 +243,8 @@ header
                 
                 img{
                 border-radius:100%;
-                @include square(310px);
+               width:80%;
+                    height:auto;
                 }
               }
            
