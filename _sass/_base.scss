@@ -93,6 +93,9 @@ header
     padding:0 5px;
     fill:#464646;
 }
+
+
+
 .section
 {    
     color: $gray-dark;
@@ -120,18 +123,41 @@ header
         }
     }
     }
-    &:nth-child(even)
+   
+    &.my-projects
+    {
+        .project-thumb
         {
-        
-            img{
-                float:right;
+            margin-bottom:50px;
+            text-align: center;
+            
+             &:hover img
+            {
+                -webkit-filter: grayscale(0);
+	           filter: grayscale(0);
             }
+        img{
+          
+            border:10px solid $white;
+            margin:0 auto;
+            -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+       
+            }
+            
+       }
+        h2{
+            margin-bottom:30px;
+            font-size:40px;
         }
-    
+        
+    }
   h2{
         font-size:30px;        
         color:darken($white,40%);
-        padding-top:40px;
+       marging-bottom:10px;
       font-weight: normal;
       text-align: center;
     
@@ -161,6 +187,8 @@ header
             color: darken($white,60%);
     }
 }
+.fp-controlArrow
+{top:60%;}
 .handwriting
 {
     @include handFont;
@@ -191,6 +219,33 @@ header
         text-align:right;
     }
     } 
+    
+    .section{
+      
+        h2{
+                margin-bottom:60px;
+                font-size:50px;
+            }
+        &.about-me
+        {
+            .fp-tableCell{
+                padding:0 300px;
+            }
+        }
+        &.my-projects
+        {
+            .project-thumb
+            {
+                text-align: center;
+                
+                img{
+                border-radius:100%;
+                @include square(310px);
+                }
+              }
+           
+        }
+    }
     //Full Page custom styles
     .fp-tableCell
     {
