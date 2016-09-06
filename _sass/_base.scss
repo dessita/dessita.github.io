@@ -1,3 +1,5 @@
+
+
 h1,h2,h3{
     @include titleFont;
 }
@@ -93,7 +95,13 @@ header
     fill:#464646;
 }
 
+.slide
+{
 
+        
+    
+    
+}
 
 .section
 {    
@@ -129,11 +137,21 @@ header
         {
             margin-bottom:50px;
             text-align: center;
-            
-             &:hover img
+            font-weight: bold;
+            div{
+                margin-top:10px;
+                color:$gray-dark;
+                
+            }
+             &:hover 
             {
-                -webkit-filter: grayscale(0);
-	           filter: grayscale(0);
+                img
+                {
+                    -webkit-filter: grayscale(0);
+                   filter: grayscale(0);
+
+                }
+                div{color:$dark-blue};
             }
         img{
           
@@ -150,7 +168,46 @@ header
        
         
     }
+        &.money-matcher-slide
+    {
+        background:url(../assets/img/projects/money-matcher-bg.jpg);
+        color:$white;
+        p{color:$white;}
+        .icon{fill:$white;}
+    background-size:cover; 
+        a{color:orange;}
+    }
+      &.power-wallet-slide
+    {
+        img{
+        border:10px solid $white;
+        float:right;
+            
+    }
+        }
+     &.financial-apps-slide
+    {
+        color:$white;
+        p{color:$white;}
+        .icon{fill:$white;} background:url(../assets/img/projects/financialapps-bg.jpg);    
+        background-repeat: no-repeat;
+        background-size:cover; 
+         a{color:orange;}
+    }
     
+    &.eav-slide,
+   &.dynamic-dashboard-slide
+    {
+        img{
+        border:10px solid $white;
+        float:right;
+            
+        }
+    }
+     &.contact
+        {
+            text-align: center;
+        } 
     h3{
         font-size:30px;        
         margin-top:60px;
@@ -208,16 +265,18 @@ header
       .right
     {
         text-align:left;
+        .icon{ float: left;}
     }
          .left
     {
         text-align:right;
+        .icon{float:right;}
     }
-          h2{text-align: center;}
+      
         h2{
                 margin-bottom:60px;
                 font-size:50px;
-         
+         text-align: center;
             }
         &.home{
             .logo{
@@ -233,6 +292,10 @@ header
             }
           
         }
+        &.money-matcher-slide
+        {
+           
+        }
         &.my-projects
         {
            
@@ -242,15 +305,15 @@ header
                 
                 img{
                 border-radius:100%;
-                    width:80%;
-                    height:auto;
+                    height:30vh;
+                    width:auto;
                 }
               }
            
         }
         &.contact
         {
-            text-align: center;
+
         }
          .fp-tableCell
     {
@@ -260,3 +323,21 @@ header
 }
     //Full Page custom styles
    
+.fp-controlArrow.fp-prev {
+    left: 20px;
+    border: none;
+    width: 27px;
+    height: 48px;
+    background: url(../assets/images/svg/sprite_left-arrow.svg) no-repeat;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.fp-controlArrow.fp-next {
+    right: 20px;
+    border: none;
+    width: 27px;
+    height: 48px;
+     opacity: 0.3;
+    background: url(../assets/images/svg/sprite_right-arrow.svg) no-repeat;
+    cursor: pointer;
+}
