@@ -108,6 +108,11 @@ header
     color: $gray-dark;
     background:$light-gray;
     box-sizing:border-box;
+      .fp-tableCell
+        {
+           
+                padding-top:60px;
+        }
     &.home
     {
          background:none;
@@ -316,9 +321,10 @@ header
 
         }
          .fp-tableCell
-    {
-          padding:0 90px;
-    }
+        {
+              padding:0 90px;
+                padding-top:130px;
+        }
     }
 }
     //Full Page custom styles
