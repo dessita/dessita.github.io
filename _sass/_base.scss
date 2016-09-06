@@ -147,27 +147,21 @@ header
             }
             
        }
-        h2{
-            margin-bottom:30px;
-            font-size:40px;
-        }
+       
         
     }
-  h2{
-        font-size:30px;        
-        color:darken($white,40%);
-       marging-bottom:10px;
-      font-weight: normal;
-      text-align: center;
     
-    }
-
-
-
     h3{
         font-size:30px;        
-        color:$dark-blue;
+        margin-top:60px;
+        @include opacity(0.7);
     }
+
+
+
+
+
+
     ul.technologies li{
         float:left;
         display:inline;
@@ -185,7 +179,7 @@ header
     p{
             color: darken($white,60%);
     }
-}
+    }
 .fp-controlArrow
 {top:60%;}
 .handwriting
@@ -206,6 +200,7 @@ header
     padding: 30px 10vw;
     
 }
+    
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
 
@@ -218,9 +213,11 @@ header
     {
         text-align:right;
     }
+          h2{text-align: center;}
         h2{
                 margin-bottom:60px;
                 font-size:50px;
+         
             }
         &.home{
             .logo{
@@ -234,25 +231,32 @@ header
             .fp-tableCell{
                 padding:0 20vw;
             }
+          
         }
         &.my-projects
         {
+           
             .project-thumb
             {
                 text-align: center;
                 
                 img{
                 border-radius:100%;
-               width:80%;
+                    width:80%;
                     height:auto;
                 }
               }
            
         }
-    }
-    //Full Page custom styles
-    .fp-tableCell
+        &.contact
+        {
+            text-align: center;
+        }
+         .fp-tableCell
     {
           padding:0 90px;
     }
+    }
 }
+    //Full Page custom styles
+   

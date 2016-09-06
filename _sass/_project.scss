@@ -3,16 +3,18 @@
     background: darken($gray-lighter,20%);
     display:flex;
     justify-content: center;
-    padding:50px;
+   
     .container
     {
-        padding:40px;
-        background:$white;
+        
         max-width:980px;
         
     }
     img
     {
         margin:0 auto;
+    }
+    @media (min-width: $screen-sm-min) { 
+         padding:40px 0;
     }
 }
