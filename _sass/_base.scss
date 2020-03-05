@@ -88,7 +88,8 @@ header
 
 .icon
 {
-    @include square(50px);
+    width:50px;
+  height:50px;
     float:left;
     display: inline;
     padding:0 5px;
@@ -105,7 +106,7 @@ header
 
 .section
 {    
-    color: $gray-dark;
+    color: $gray-600;
     background:$light-gray;
     box-sizing:border-box;
       .fp-tableCell
@@ -131,7 +132,7 @@ header
     .large-text
         {
             font-weight: bold;
-            @include opacity(0.8);
+           opacity:0.8;
         }
     }
     }
@@ -145,7 +146,7 @@ header
             font-weight: bold;
             div{
                 margin-top:10px;
-                color:$gray-dark;
+                color:$gray-600;
                 
             }
              &:hover 
@@ -217,7 +218,7 @@ header
     h3{
         font-size:30px;        
         margin-top:60px;
-        @include opacity(0.7);
+        opacity: 0.7;
     }
 
 
@@ -265,7 +266,7 @@ header
 }
     
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { 
+@include media-breakpoint-up(sm) {
 
     .section{
       .right

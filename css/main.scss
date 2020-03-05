@@ -5,13 +5,20 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "jquery.fullPage.scss",
-    "bootstrap",
-    "icons",
-    "mixins",
-    "variables",
-    "base",
-    "project",
-    "layout";
-    
+
+
+
+//@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,600,800|Roboto+Slab:400,700&display=swap|Lato:700i&display=swap');
+
+// Site variables
+@import "../node_modules/bootstrap/scss/functions.scss";
+
+@import "variables";
+@import "jquery.fullPage";
+@import "bootstrap";
+
+@import "icons";
+@import "mixins";
+@import "base";
+@import "project";
+@import "layout";
