@@ -1,6 +1,6 @@
 .project
 {    
-    background: darken($gray-lighter,20%);
+    background: $gray-300;
     display:flex;
     justify-content: center;
    min-height:100vh;
@@ -14,7 +14,8 @@
     {
         margin:0 auto;
     }
-    @media (min-width: $screen-sm-min) { 
-         padding:120px 0;
+  @include media-breakpoint-up(sm) {
+
+    padding:120px 0;
     }
 }
