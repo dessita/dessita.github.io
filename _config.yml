@@ -21,12 +21,41 @@
 title: Desislava Slavkova
 email: dessita@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  UX designer that loves the challange of solving usability problems and coding them.
+  UX designer that loves the challenge of solving usability problems and coding them.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-assets
+  - jekyll-redirect-from
+
+assets:
+  #digest: true
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+  compress:
+  #js: true
+  assets:
+    - "*.js"
+  source_maps: true
+  sources:
+    - _sass
+    - assets/js
+    - assets
+    - node_modules
+    - node_modules/popper.js/dist/umd
+    - node_modules/bootstrap/js/dist/js
+    - node_modules/bootstrap/js/dist
+    - node_modules/bootstrap/js/dist/button.js
+    - node_modules/bootstrap/js/dist/tooltip.js
+    - node_modules/mdbootstrap/js/
+excerpt_separator: <!--more-->
 # Build settings
 # Exclude from processing.
 # The following items will not be processed, by default.
