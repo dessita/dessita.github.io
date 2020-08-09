@@ -1,0 +1,9 @@
+@tailwind base;
+
+.change {
+    color: transparent;
+}
+ 
+@tailwind components;
+
+@tailwind utilities;
