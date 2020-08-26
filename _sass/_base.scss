@@ -76,7 +76,9 @@ header
     top:0;
     left:0;
     z-index: -1;
-    
+  background-repeat: no-repeat;
+  position:fixed;
+width:100%;
 }
 .large-text{
     font-size: 8vw;
@@ -197,9 +199,14 @@ header
         background-size:cover; 
          a{color:orange;}
     }
-    
+  &.patientclear-slide{
+
+   background:url(../assets/img/projects/finclear-consumer_l.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    a{color:orange;}
+  }
     &.eav-slide,
-    &.finclear-consumer-slide,
    &.dynamic-dashboard-slide
     {
         img{
@@ -219,8 +226,12 @@ header
     }
 
 
-
-
+.p-5{
+  padding:4rem;
+}
+.bg-white{
+  background-color:white;
+}
 
 
     ul.technologies li{
