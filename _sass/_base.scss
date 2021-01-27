@@ -1,11 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Gothic+A1:400,600,700,800|Roboto+Slab:400,700&display=swap|Lato:700i&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=SSource+Sans+Pro:wght@400;700;900&display=swap');
 
 h1, h2, h3 {
   @include titleFont;
 }
 
+h1{
+  line-height: 1.7;
+}
 body, p {
   @include bodyFont;
   font-weight: 300;
@@ -17,6 +19,15 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-link{
+  color:theme-color('body');
+  font-size:1.2em;
+  font-weight: 700;
+
+  &.active{
+    box-shadow: 0 6px 0 0  theme-color('primary');
+  }
+}
 body > svg {
   display: none;
 }
@@ -24,7 +35,15 @@ body > svg {
 .learn-more-link .glyphicon {
   font-size: 16px;
 }
-
+.past-clients{
+  img{
+    width:200px;
+    height:50px;
+  }
+}
+.w-100{
+  width:100%;
+}
 /* Underline From Left */
 .hvr-underline-from-left {
   display: inline-block;

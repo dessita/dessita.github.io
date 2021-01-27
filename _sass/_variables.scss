@@ -1,5 +1,44 @@
+$theme-colors: (
+        'primary': #03a3c9,
+        'link-color': #1f6a89,
+        'accent-blue': #1f6a89,
+        'info': #52abd3,
+        'gray-100': #ededee,
+        'gray-300': #d6dade,
+        'gray-400': #afb2b4,
+        'gray-500': #888b8d,
+        'pale-blue': #94abba,
+        'gray-600': #6a6c6e,
+        'gray-800': #464646,
+        'success': #5b7919,
+        'light-green': #e6fac0,
+        'danger-light': #ffe0e0,
+        'warning': #ea9e46,
+        'light': #efefef,
+        'warning-light': #fcd79d,
+        'menu-background': #123559,
+        'accent': #48bfb2,
+        'body': #212529,
+        'secondary': #48bfb2,
+        'green': #44be44,
+);
+
+$navbar-light-color: black;
+$navbar-light-hover-color: black;
+$navbar-light-active-color: $link-color;
+$container-max-widths: (
+        sm: 750px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1360px,
+);
+
 $white: #FFFFFF;
 $light-gray: #E6E6E6;
 $light-dark: #464646;
 $dark-blue: #314452;
 $logo-color: #212304;
+
+
+
+
