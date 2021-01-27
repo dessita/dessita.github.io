@@ -5,9 +5,10 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
+#
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.7.3"
+gem "jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -21,9 +22,19 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
 end
 
-
+gem "bootstrap", "~> 4.5.2"     # 4.xbundle up
+# This will help ensure the proper Jekyll version is running.
 gem "sprockets", "~> 3.7", {
     require: true
 }
+
+
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
 
 

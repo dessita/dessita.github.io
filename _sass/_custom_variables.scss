@@ -2,6 +2,7 @@ $theme-colors: (
         'primary': #03a3c9,
         'link-color': #1f6a89,
         'accent-blue': #1f6a89,
+        'lila': #AF5497,
         'info': #52abd3,
         'gray-100': #ededee,
         'gray-300': #d6dade,
@@ -25,7 +26,7 @@ $theme-colors: (
 
 $navbar-light-color: black;
 $navbar-light-hover-color: black;
-$navbar-light-active-color: $link-color;
+$navbar-light-active-color: theme-color('link-color');
 $container-max-widths: (
         sm: 750px,
         md: 768px,

@@ -18,7 +18,20 @@ body, p {
 a:hover {
   text-decoration: none;
 }
+.color-blocks{
+  position:relative;
+  &:before{
 
+    content: "";
+    position:absolute;
+    width:510px;
+    height:600px;
+    background:theme-color('lila');
+    rotation: 45deg;
+    top:25%;
+    right:-50%;
+  }
+}
 .nav-link{
   color:theme-color('body');
   font-size:1.2em;
@@ -127,7 +140,7 @@ body > svg {
 
     div {
       margin-top: 10px;
-      color: $gray-600;
+      color: theme-color('gray-600');
 
     }
 
