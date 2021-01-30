@@ -1,0 +1,27 @@
+steps:
+  - step:
+    icon:   "brainstorming.svg"
+    title: "Research & Brainstorming"
+    content: "This step I assess the business requirements,  research competitors and similar web solutions, design patterns that can be used and the existing solutions of components that exist and are  compatible with the framework of the project."
+  - step:
+    icon: "sketch.svg"
+    title: "Sketch (Optional)"
+    content: "Often I use sketching to help me visualize ideas while brainstorming, sometimes to help myself make decisions on how to structure the prototype. When we brainstorm with the product or development team I use them as a way  to present a solution of a problem or just variants  we are discussing and trying to decide between.  "
+
+  - step:
+    icon: "prototype.svg"
+    title: "Detailed Prototype"
+    content: "Here I do the actual layout of each page and link the expected interactions between them. I use Adobe XD to create fully functional looking design prototypes.  Sometimes I do 2-3 versions of the same flow and create questionary - or quick test which one is more intuitive and easier for users to understand. "
+
+  - step:
+    icon: "user_testing.svg"
+    title: "User Testing"
+    content: "Here I do the actual layout of each page and link the expected interactions between them. I use Adobe XD to create fully functional looking design prototypes.  Sometimes I do 2-3 versions of the same flow and create questionary - or quick test which one is more intuitive and easier for users to understand. "
+  - step:
+    icon: "markup_code.svg"
+    title: "HTML/SCSS code"
+    content: "Here I do the actual layout of each page and link the expected interactions between them. I use Adobe XD to create fully functional looking design prototypes.  Sometimes I do 2-3 versions of the same flow and create questionary - or quick test which one is more intuitive and easier for users to understand. "
+  - step:
+    icon: "javascript.svg"
+    title: "Javascript"
+    content: "My next favorite part about what I do is coding javascript interactions. Understanding JavaScript allows me to enhance the user experience and also helps me understand  better how to design with  developers in mind. I am currently working in a team  with very talented professionals coding Ruby/Rails and React applications. "

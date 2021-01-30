@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=SSource+Sans+Pro:wght@400;700;900&display=swap');
+
+h1, h2, h3 {
+  @include titleFont;
+}
+
+h1{
+  line-height: 1.7;
+  }
+body, p {
+  @include bodyFont;
+
+  font-size: 22px;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+.overflow-x-hidden{
+  overflow-x:hidden;
+}
+.color-blocks {
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 510px;
+    height: 600px;
+    background: theme-color('lila');
+    transform: rotate(-20deg);
+    top: -5vh;
+    right: -400px;
+    @include media-breakpoint-down(sm){
+      right: -480px;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 510px;
+    height: 600px;
+    background: theme-color('primary');
+    transform: rotate(-20deg);
+    top: 45vh;
+    left: -400px;
+
+@include media-breakpoint-down(sm){
+  left: -480px;
+}
+  }
+}
+.my-process{
+  .icon-container{
+    position:relative;
+    &:after{
+      content:" ";
+    position:absolute;
+    border-radius:50%;
+    width:165px;
+    height:165px;
+      left:50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    background-color:rgba(theme-color('primary'), 0.2);
+    }
+
+    &:before{
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29.189' height='61.388' viewBox='0 0 29.189 61.388'%3E%3Cg id='Component_1_4' data-name='Component 1 – 4' transform='translate(28.488) rotate(90)'%3E%3Cpath id='Path_56' data-name='Path 56' d='M412,1260h59.948' transform='translate(-412 -1246)' fill='none' stroke='%23707070' stroke-width='2'/%3E%3Cpath id='Path_57' data-name='Path 57' d='M510.123,1247.115,524,1261.242l-13.877,13.648' transform='translate(-464.026 -1247.115)' fill='none' stroke='%23707070' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+      position:absolute;
+
+      width: 25px;
+      height: 62px;
+      left:50%;
+      bottom:-62px;
+      transform: translate(-50%, 100%);
+
+
+  }
+}
+.process-row{
+  position:relative;
+  &:before{
+    position:absolute;
+    transform:rotate(-20deg);
+    content: " ";
+    width:1650px;
+    height:600px;
+    top:-100px;
+    right:-50px;
+    z-index: -1;
+    background-color: $gray-300;
+  }
+
+}
+.step-content{
+  flex:1;
+  margin-left:5rem;
+
+
+}
+}
+.process-step{
+margin-bottom:10rem;
+  &:last-of-type .icon-container:before{
+    background-image: none;
+  }
+}
+.vh-80{
+  height:80vh;
+}
+.nav-link{
+  color:theme-color('body');
+  font-size:1.2em;
+  font-weight: 700;
+  margin-left:3rem;
+
+  &.active{
+    box-shadow: 0 6px 0 0  theme-color('primary');
+  }
+}
+body > svg {
+  display: none;
+}
+
+.learn-more-link .glyphicon {
+  font-size: 16px;
+}
+.past-clients{
+  img{
+    width:200px;
+    height:50px;
+  }
+}
+
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098d1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.logo {
+  width: 280px;
+  height: 34px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.background-img {
+
+  background-image: url(../assets/img/desk.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  z-index: -1;
+
+}
+
+.large-text {
+  font-size: calc(3rem + 6vw);
+}
+
+
+.icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  display: inline;
+  padding: 0 5px;
+  fill: #464646;
+}
+
+
+
+.project{
+  width:auto;
+  text-align:center;
+  height:auto;
+
+  img{
+    width:100%;
+    margin-bottom: 1rem;
+      }
+}
+
+
+
+.contact {
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 60px;
+  opacity: 0.7;
+}
+
+
+

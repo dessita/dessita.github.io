@@ -43,11 +43,13 @@ assets:
   #js: true
   assets:
     - "*.js"
+    - "*.svg"
   source_maps: true
   sources:
     - _sass
     - assets/js
     - assets
+    - assets/images/
     - node_modules/bootstrap/scss/
     - node_modules/popper.js/dist/umd
     - node_modules/bootstrap/js/dist/js

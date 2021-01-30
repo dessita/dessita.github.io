@@ -18,13 +18,14 @@ gem "jekyll"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.6"
-  gem "jekyll-assets"
+  gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
   gem 'jekyll-redirect-from'
 end
 
+
 gem "bootstrap", "~> 4.5.2"     # 4.xbundle up
 # This will help ensure the proper Jekyll version is running.
-gem "sprockets", "~> 3.7", {
+gem "sprockets", "~> 4.0.beta7", {
     require: true
 }
 

@@ -1,0 +1,10 @@
+pages:
+  - item:
+    title: "Home"
+    url: "/"
+  - item:
+    title: "My Process"
+    url: "/my-process"
+  - item:
+    title: "Recent Projects"
+    url: "/recent-projects"

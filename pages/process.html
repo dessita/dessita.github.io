@@ -1,0 +1,29 @@
+---
+title: "My Process"
+permalink: /my-process
+layout: default
+
+---
+<div class="container-xl my-process">
+    <div class="row  align-items-center process-row">
+        <div class="col ">
+            <h1 class="text-center font-weight-bold "
+                style="font-size:6rem; margin-bottom:20vh; margin-top:20vh">My Process</h1>
+            <ul>
+                {% for item in site.data.process.steps %}
+                <li class="d-flex align-items-center process-step">
+                    <div class="flex-auto ">
+                        <div class="icon-container">
+                            <img src="assets/images/{{item.icon}}"
+                                 alt="brainstorming"/>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="mt-0">
+                    {{item.title}}
+                    </h3><p>{{item.content}}"</p>
+        </div>
+        </li>{% endfor %}</ul>
+    </div>
+</div>
+</div>
