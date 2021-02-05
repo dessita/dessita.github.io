@@ -2,7 +2,7 @@
 permalink: /
 layout: default
 ---
-
+<div class="container-fluid bg-gray-100">
 <div class="color-blocks"></div>
 <div class="container-xl position-relative ">
 
@@ -16,38 +16,83 @@ layout: default
 
     </div>
 
-    <div class="p-5">
+    <div class="row clients">
 
-        <div class="col-xs-12 ">
+
             <h2 class="pb-5 w-100 text-center font-sans">Some Clients I have worked for </h2>
-            <div class="list-unstyled d-flex past-clients justify-space-between">
+            <div class="w-100 list-unstyled d-flex past-clients justify-space-between">
                 <div class="col"><img src="assets/images/broward_health.svg"/></div>
                 <div class="col"><img src="assets/images/morgan_stanley.svg"/></div>
                 <div class="col"><img src="assets/images/corelogic.svg"/></div>
                 <div class="col"><img src="assets/images/envestnet.svg"/></div>
             </div>
+
+    </div>
+
+</div>
+</div>
+<div class="container-lg pb-5 ">
+
+<h1 class="pb-4 pt-5  text-center">
+    Recent Projects
+</h1>
+
+<div class="row radial-gradient project-row">
+    <div class="col-12 col-lg project-item">
+
+        <h2 class="font-sans font-weight-bold">Consumer Portal</h2>
+        <p>B2C Web Rails App</p>
+          <h4> My responsibility</h4>
+        <div>
+        <span class="badge badge-light">User Flows</span>
+        <span class="badge badge-light">User Testing</span>
+        <span class="badge badge-light">Prototypes</span>
         </div>
-    </div>
-<div class="row mt-5">
-    <h2 class="pb-4 pt-5 w-100 text-center font-sans">Latest Projects </h2>
-</div>
-    <div class="row align-items-end">
-    <div class="col">
-        <div class="project"><img src="assets/images/tenant-dashboard@3x.png"
-                                  style="max-width:673px; o"
-
-                                  alt="tenant  dashboard screenshot"/>
-            <div class="font-weight-bold">        Tenant Dashboard Portal</div>
+        <div>
+        <span class="badge badge-light">Rails</span>
+        <span class="badge badge-light">HTML</span>
+        <span class="badge badge-light">SCSS</span>
+            <span class="badge badge-light">jQuery (some)</span>
         </div>
-    </div>
-    <div class="col">
-        <div class="project "><img src="assets/images/consumer-portal@3x.png"
-                                  style="max-width:540px;"
+        <p class="mt-4">Started 2019 - Ongoing</p>
+        <a class="btn" href="/consumer-portal">Learn more</a>
 
-                                  alt="tenant  dashboard screenshot"/>
-            <div class="font-weight-bold">Consumer Portal</div>
     </div>
+    <div class="col-12 col-lg">
+        {% asset consumer-portal-cut-off.svg
+        class='img-fluid mt-5'
+        alt='consumer portal screenshot' %}
     </div>
+</div>
+    <div class="row radial-gradient project-row ">
+        <div class="col-12 col-lg project-item">
 
+                <h2 class="font-sans font-weight-bold">Tenant Dashboard</h2>
+                <p class="info-line">B2B Web React App</p>
+
+            <div class="info-line">
+             <h4 class="info-line"> My responsibility</h4>
+
+                    <span class="badge badge-light">User Flows</span>
+                    <span class="badge badge-light">User Testing</span>
+                    <span class="badge badge-light">Prototypes</span>
+                    <span class="badge badge-light">Rails</span>
+                    <span class="badge badge-light">HTML</span>
+                    <span class="badge badge-light">SCSS</span>
+                    <span class="badge badge-light">jQuery (some)</span>
+
+        </div>
+                <div class="info-line">Started 2019 - Ongoing</div>
+        <a class="btn" href="/consumer-portal">Learn more</a>
+
+    </div>
+    <div class="col-12 col-lg d-flex justify-content-center p-0">
+        {% asset tenant-dashboard.svg
+        class='img-fluid '
+        alt='consumer portal screenshot' %}
+    </div>
 </div>
 </div>
+</div>
+
+

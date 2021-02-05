@@ -5,3 +5,5 @@ _site
 .idea
 .jekyll-metadata
 vendor
+raw/consumer-portal.psd
+raw/tenant-dashboard.psd

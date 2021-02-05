@@ -1,0 +1,13 @@
+all:
+  - project:
+    image: "tenant-dashboard@3x.png"
+    title: "Tenant Dashboard "
+    responsabilities: "All Design, HTML & SCSS. Some ECMA6 Javascript"
+    description: "A B2B React Application, built for hospitals and medical providers, currently user by Broward Health."
+    url: "/tenant-dashboard"
+  - project:
+    image: "consumer-portal@3x.png"
+    title: "Consumer Portal "
+    responsabilities: "All Design, HTML & SCSS. Some jQuery Javascript "
+    description: "A B2C Rails Application, built for hospitals and medical providers, currently user by Broward Health."
+    url: "/tenant-dashboard"

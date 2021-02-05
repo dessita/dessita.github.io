@@ -35,11 +35,23 @@ $container-max-widths: (
         xl: 1360px,
 );
 
+$sans-serif-font:   'Source Sans Pro', sans-serif;
+$serif-font:   'Playfair Display', serif;
+
 $white: #FFFFFF;
 $light-gray: #E6E6E6;
 $light-dark: #464646;
 $dark-blue: #314452;
 $logo-color: #212304;
+$navbar-padding-y:2rem;
+
+$btn-border-radius-lg:50px;
+$btn-padding-x-lg:2rem;
+$btn-padding-y-lg:1rem;
+$btn-border-width:0.25rem;
+
+
+
 
 
 
