@@ -175,8 +175,8 @@ body > svg {
 
 
 
-.btn{
-  border:0.3rem solid darken(theme-color('primary'), 20%);
+.btn.btn-primary{
+  border:0.3rem solid darken(theme-color('primary'), 2%);
   @extend .shadow;
 
 }
@@ -282,8 +282,10 @@ margin-top:5rem;
 }
 
 .project-row{
-  margin-bottom:5rem;
+  margin-bottom:15rem;
   min-height:750px;
+  @extend .radial-gradient;
+  @extend .shadow;
 }
 .project{
   width:auto;
