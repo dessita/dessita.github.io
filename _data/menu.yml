@@ -6,5 +6,5 @@ pages:
     title: "My Process"
     url: "/my-process"
   - item:
-    title: "Recent Projects"
-    url: "/recent-projects"
+    title: "Resume"
+    url: "/resume"

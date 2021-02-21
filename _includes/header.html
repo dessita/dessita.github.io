@@ -1,15 +1,21 @@
 <header class="w-100 bg-gray-100">
-   <nav class="navbar navbar-expand-lg ">
+   <nav class="navbar navbar-expand-lg p-0">
        <div class="container-fluid">
-       <a class="navbar-brand ml-4 ml-lg-0" href="/" >
+           <div class="p-4 p-lg-0 d-flex justify-content-between top-bar-mobile">
+       <a class="navbar-brand " href="/" >
        {% asset logo-color.svg
        class='img-responsive logo'
        alt='dessita' %}
        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+               {% asset svg/bars-solid.svg
+               class='img-responsive logo'
+               alt='menu-hamburger' %}
+           </button>
+           </div>
 
-
-            <ul class="navbar-nav ml-auto small">
+           <div class="main-menu py-4  collapse navbar-collapse text-right" id="navbar-main">
+            <ul class="navbar-nav py-5 py-lg-0 ml-auto small">
                 {% for node in site.data.menu.pages %}
                 <li class="nav-item active">
                     {% if page.url == node.url %}
@@ -21,7 +27,8 @@
                 </li>
                 {% endfor %}
             </ul>
-        </div>
+
+       </div>
        </div>
 
 

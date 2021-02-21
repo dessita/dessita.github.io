@@ -1,0 +1,58 @@
+positions:
+  - job:
+    position: "Senior UX Designer"
+    company: "Financial Apps (previously called PowerWallet) | Nov 2012 -  Present"
+    summary: "Conceptualized, designed and prototyped web all applications needs for the  company involving the creation of flow charts, wireframes, high-fidelity mockups and interactive prototypes. Worked closely with the engineering team while coding  most of the HTML, all the styles (SCSS & LESS), and large part of the  Javascript interactions related to the interaction  into Ruby Rails MVC and React applications."
+
+  - job:
+    position: "UX Designer"
+    company: "Ocean Media Systems | July 2011 - Oct 2011"
+    summary: "Managed and coordinated the redesign of the company website from concept through completion. Developed a custom Content Management Systems using ASP.NET  to allow update of the website content and access to useful data gathered through the site."
+
+  - job:
+    position: "Multimedia Director/ Web Designer"
+    company: "Advantage Services.Net | Jan 2005 - July 2011"
+    summary: "Managed and coordinated web design projects from concept through completion
+      Collaborated with clients to create vision, conceive designs and consistently meet deadlines and requirements. Successfully translated subject matter into concrete design of websites, landing pages, promotional email and other multimedia and occasional print projects.
+      Collaborated with CMS programmers, helped with the database structure and its translation to XML and optimize UI for best usability experience."
+
+technologies:
+  - techno:
+    name: "HTML"
+    proficiency: "90%"
+
+  - techno:
+    name: "SCSS"
+    proficiency: "80%"
+
+  - techno:
+    name: "jQuery"
+    proficiency: "75%"
+
+  - techno:
+    name: "Bootstrap"
+    proficiency: "90%"
+
+  - techno:
+    name: "Git"
+    proficiency: "60%"
+
+  - techno:
+    name: "Ruby/Rails"
+    proficiency: "50%"
+
+  - techno:
+    name: "React"
+    proficiency: "50%"
+
+  - techno:
+    name: "Jekyll"
+    proficiency: "80%"
+
+  - techno:
+    name: "Github pages"
+    proficiency: "75%"
+
+  - techno:
+    name: "npm"
+    proficiency: "width:80%"

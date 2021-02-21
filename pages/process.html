@@ -5,19 +5,20 @@ layout: default
 
 ---
 <div class="container-xl my-process">
-    <div class="row  align-items-center header-row">
-        <div class="col ">
+    <div class="row  align-items-center px-4 px-sm-5">
+        <div class="col  ">
             <h1 class="text-center font-weight-bold "
                 style="font-size:6rem; margin-bottom:20vh; margin-top:20vh">My Process</h1>
             <ul>
                 {% for item in site.data.process.steps %}
-                <li class="d-flex align-items-center process-step">
+                <li class="row process-step">
                     <div class="flex-auto ">
                         <div class="icon-container">
                             <img src="assets/images/{{item.icon}}"
                                  alt="brainstorming"/>
                         </div>
                     </div>
+
                     <div class="step-content">
                         <h3 class="mt-0">
                     {{item.title}}

@@ -1,0 +1,349 @@
+---
+
+title: "Tenant Dashboard"
+permalink: /tenant-dashboard
+layout: default
+
+---
+
+
+<div class="project-page">
+
+    <div class="row  align-items-center header-row project">
+        <div class="col top-section-black-bg">
+            <div class="container-lg">
+                <div class="row">
+                    <div class='col d-flex flex-column justify-content-center align-items-center '>
+                        <h1 class=" text-left  text-white"
+                            style="font-size:5rem; ">
+                            Tenant Dashboard </h1>
+                        <p class="pl-4 large-text text-white">A responsive web application</p>
+
+                        {% asset tenant-dashboard-header.svg style='width:1000px;' alt='consumer portal' %}
+                        <div class="small"
+                             style="margin-top:-50px;"><b>Above/</b> Home page of the consumer portal application
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-gray-100"
+         style="padding-top:5rem; margin-bottom:8rem;">
+        <div class="container-lg py-5 ">
+            <div class="d-flex justify-content-center max-width-sm">
+                <div class="px-5 flex-1">
+
+                    <div class="category-title">Position</div>
+                    <div class="small mb-5">Lead UX Designer</div>
+
+                    <div class="category-title">Company</div>
+                    <div class="small">FinancialApps.com</div>
+
+
+                </div>
+
+                <div class="px-5 flex-1">
+
+                    <div class="category-title">Responsabilities</div>
+                    <div class="small">UX Research <br/> Prototypes<br/> HTML<br/> SCSS<br/> Javascript (teamwork)
+                    </div>
+                </div>
+
+                <div class="px-5 flex-1">
+
+                    <div class="category-title"> Tools</div>
+                    <div class="small">Adobe XD<br/> Illustrator<br/> Photoshop<br/> Rubymine<br/> jQuery<br/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-12 the-story">
+            <div class="max-width-sm">
+                <h4>Overview</h4>
+                <p>A B2B Web Application where companies can request information to facilitate government financial aid application for programs such as medicaid or to set up a payment plan. </p>
+                {% asset tenant-dashboard-site-map@3x style='width:1000px;' alt='consumer portal' %}
+                <h4>Short Description of the Task</h4>
+                <p>Provide screening service with a Florida Medicaid Eligibility Screening product as a Tenant initiated process within Dashboard.</p>
+                <h4>User Story Epic</h4>
+                <table role="table"
+                       class="table-striped table">
+
+                    <tbody>
+
+                    <tr>
+                        <td>201</td>
+                        <td>Dashboard Operators shall be able to view a list of screening products available within the tenant (Florida Medicaid Eligibility will be the first and only screening product for MVP).</td>
+                        <td><strong>Post</strong> MVP</td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>Dashboard Operators shall be able to initiate screening products available within the tenant. (Florida Medicaid Eligibility will be 'Hard-coded' in the platform for MVP.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>202.1</td>
+                        <td>Use-case 1: Initiate a screening product for a <strong>New</strong> consumer</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>202.1.1</td>
+                        <td>Dashboard shall develop workflows to create new consumers using current state capabilities (Create consumer API's)</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>202.2</td>
+                        <td>Use-case 2: Initiate a screening product for an <strong>Existing</strong> consumer</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203</td>
+                        <td>Dashboard Operators shall be able to engage with a screening product (Defined as interacting with a series of questions and answers).</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203.1</td>
+                        <td>Dashboard shall render the questions, answer options and inputs required based off of data schemas provided by the API.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203.2</td>
+                        <td>Dashboard shall show on-going summary of questions and answers provided during the screening session.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203.3</td>
+                        <td>Dashboard shall show a visual representation of how close to complete the screening progress is based on data provided.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203.4</td>
+                        <td>Dashboard shall show results of screening based on data provided.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>203.4.1</td>
+                        <td>Results shall include: <code>Pass / Fail evaluation</code>,
+                            <code>Documents that are needed</code>.
+                        </td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204</td>
+                        <td>Positive Path screening evaluation results shall present the Operator with several post evaluation options:</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.1</td>
+                        <td>Use-case: Brand New Consumer (No Doc-order requests) OR Existing Consumer withOUT a doc-order request.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.1.1</td>
+                        <td>Request Documents Needed: Dashboard will create a new doc-request order for the consumer and automatically seed request with the documents (upload documents) needed (Documents needed shall be a part of the result provided by the API).</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.1.2</td>
+                        <td>Operator shall be prompted if additional requests (Ex. E-sign or Other documents) are desired to be added to the request before finalizing the doc-request order and notifying the consumer.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.2</td>
+                        <td>Use-case: Existing consumer WITH a pre-existing doc-request order (With previously requested upload documents)</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.2.1</td>
+                        <td>Request Additional Documents Needed: Dashboard will automatically add any additional documents to the doc-request order by cross referencing documents that have already been requested.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>204.2.2</td>
+                        <td>Operator shall be prompted if additional requests (Ex. E-sign or Other documents) are desired to be added to the existing doc-request order before notifying the consumer again.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>205</td>
+                        <td>Dashboard operators shall be able to print evaluation results, along with Summary of Questions and Answers.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>206</td>
+                        <td>Dashboard shall apply/update captured doc-request order ref. numbers to saved screening results. Any screening result, when possible, will be associated with a doc-request order. This will allow our system to track the success of evaluations in a feedback loop.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>207</td>
+                        <td>Operators shall be able to review previous screening results of a consumer including when it was done and which operator performed the screening.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>208</td>
+                        <td>Operators must confirm to continue the screening process for duplicate screening events.
+                            <br><br>Ex. If an operator attempts to engage into another screening event for a consumer that already had one done for that same screening product, the operator shall be prompted of the last occurrence of a screening event (and by which operator). The operator must confirm to continue the screening process.
+                        </td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>209</td>
+                        <td>Operators can access an external link for a screening product.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>209.1</td>
+                        <td>Must be accessible after a screening event during the displaying of results.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>209.2</td>
+                        <td>Can be accessible whenever the screening product is displayed.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>210</td>
+                        <td>Negative Path screening evaluation results shall present the Operator with several post evaluation options:
+                            <code>Re-evaluation</code>, <code>Continue with manual requesting of documents</code>.
+                        </td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211</td>
+                        <td>Dashboard shall be capable of allowing a DevOps admin to specify a list of upload document Id's per available
+                            <code>Brand</code>.
+                        </td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211.1</td>
+                        <td>Defined Upload list for Brands shall include: <code>PatientClear</code> and
+                            <code>FinCertify</code></td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211.1.1</td>
+                        <td>PatientClear Upload document Id's: TBD</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211.1.2</td>
+                        <td>FinCertify Upload document Id's: TBD</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211.2</td>
+                        <td>Upload documents drop-down list shall only be populated with the documents that were included in the defined list for the Brand.</td>
+                        <td>MVP</td>
+                    </tr>
+                    <tr>
+                        <td>211.2.1</td>
+                        <td>An undefined list for a
+                            <code>Brand</code> shall default to populate all available documents retrieved from API.
+                        </td>
+                        <td>MVP</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li>We were bound to use the existing company’s proprietary API . It already supported some of the functionality needed even though it’s architecture was not optimized for this product.</li>
+                    <li>We would have to adapt our solution to it in order to save time for releasing the MVP.</li>
+                </ul>
+
+
+                <h4>Flow Chart</h4>
+                <div class="text-center pb-5">
+                    {% asset medicaid-eligibility-flow-chart.png class='img-fluid' alt='prototypes' %}
+                </div>
+                <h3>Prototypes</h3>
+
+            </div>
+
+
+            <div class="row ">
+                <div class=" col-xs-12 col-lg-6 text-center pb-5">
+                    {% asset before@3x.png class='mx-auto w-100' alt='medicaid eligibility fow chart' %}
+                    <div class="underline-label lila">Before</div>
+                </div>
+                <div class="col-xs-12 col-lg-6  text-center ">
+                    {% asset after@3x.png class='mx-auto w-100' alt='medicaid eligibility fow chart' %}
+                    <div class="underline-label ">After</div>
+                </div>
+            </div>
+
+
+            <div class="max-width-sm">
+                <h3> Screening Questionnaire Design</h3>
+                <div class="text-center mb-5">
+                {% asset screening/question-boolean@3x.png class='img-fluid screenshot mx-auto w-100' alt='Question of type boolean'  %}
+                <div class="">Screening Question type Boolean</div>
+                </div>
+                <div class="text-center mb-5">
+                {% asset screening/question-text-input–2@3x.png class='img-fluid screenshot mx-auto w-100' alt='Question of type currency'  %}
+                <div class="">Question type currency </div>
+                </div>
+                <div class="text-center mb-5">
+                    {% asset screening/question-multiple-choice–1@3x.png class='img-fluid screenshot mx-auto w-100' alt='Question of type multiple choice'  %}
+                    <div class="">Question type multiple Choice </div>
+                </div>
+                <div class="text-center mb-5">
+                    {% asset screening/question-date–1@3x.png class='img-fluid screenshot mx-auto w-100' alt='New features'  %}
+                    <div class="">Question type date </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="max-width-sm">
+                <h3>What's New Page</h3>
+                <h4>Problem</h4>
+                <ul>
+                    <li>Build a page that presents the new features were added with latest release.</li>
+                    <li>This page will get updated with each future release.</li>
+                </ul>
+                <h4>Solution</h4>
+            </div>
+
+            <div class="mx-auto"  style='max-width:1600px'>
+                {% asset new-features@3x.png class='img-fluid ' alt='New features' %}
+            </div>
+
+
+            <div class="max-width-sm">
+                <h3>New Patient</h3>
+                <h4>Problem</h4>
+                <ul>
+                    <li>Need to simplify current request documents flow.</li>
+                    <li>Allow user to create new patient independently from requesting information.</li>
+                </ul>
+                <h4>Solution</h4>
+                <li>Created Add New Patient form as a modal - available from the top navigation </li>
+                <li>Additional information can be requested from Patient's profile page </li>
+                <li>Achieved separations of concerns - The user doesn't need to request or know what they need to request to create patient's profile</li>
+            </div>
+
+            <div class="mx-auto"  style='max-width:1600px'>
+                {% asset new-patient-modal@3x.png class='img-fluid ' alt='New features' %}
+            </div>
+            <div class="max-width-sm text-center">
+                <a class="btn btn-primary btn-lg mb-5"
+                   href="https://xd.adobe.com/view/efbbd54c-d7b4-4074-8c45-8d2d626a5e93-bae8/?fullscreen"
+                   target="_blank">
+                    View Final Prototype
+
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+

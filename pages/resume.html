@@ -1,0 +1,97 @@
+---
+title: "Resume"
+permalink: /resume
+layout: default
+---
+
+<div class="project-page">
+    <div class="row  align-items-center header-row project">
+        <div class="col  ">
+            <h1 class="text-center font-weight-bold "
+                style="font-size:6rem;  margin-bottom:10vh; margin-top:10vh">
+                Resume</h1>
+        </div>
+    </div>
+
+
+
+
+        <div class="row  no-gutters page-main-section px-4 px-md-5">
+            <div class=" col">
+                <div class="max-width-sm">
+                <h4 class="blue">EXPERIENCE</h4>
+            {% for item in site.data.experience.positions %}
+
+                <div class="mb-5">
+                <h2 class="mt-0 large-text bold">{{item.position}}</h2>
+                <h5 class="mt-0 large-text font-italic mb-4">{{item.company}}</h5>
+                <p>{{item.summary}}</p>
+                </div>
+
+            {% endfor %}
+
+                <h4 class="blue">EDUCATION</h4>
+                <div class="mb-5">
+                    <h2 class="mt-0 large-text bold">University of Economics, Varna, Bulgaria</h2>
+                     <p>Bachelor degree in Marketing</p>
+                </div>
+        </div>
+
+
+    <div class="row  no-gutters page-main-section px-4 px-md-5 max-width-sm justify-content-between">
+        <div class=" col-12 ">
+        <h4 class="blue">TECHNOLOGIES</h4>
+        </div>
+        {% for item in site.data.experience.technologies %}
+
+        <div class="mb-5 col-5">
+            <div class="row ">
+                <div class="col">
+            {{item.name}}
+                </div>
+                <div class="col">
+            <div class="progress ">
+                <div class="progress-bar" role="progressbar" style="width: {{item.proficiency}}" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+        </div>
+                <div class="row  no-gutters page-main-section px-4 px-md-5 max-width-sm  ">
+                    <div class="col">
+                        <h4 class="blue">SKILLS</h4>
+                        <ul class="list-unstyled skills">
+                            <li>UX/UI Design</li>
+                            <li>Prototyping</li>
+                            <li>Interactive Design</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4 class="blue">TOOLS</h4>
+                        <ul class="list-unstyled skills">
+                            <li>Adobe XD</li>
+                            <li>Overflow</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Ruby Mine</li>
+                            <li>Source Tree</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                <a class="btn btn-primary btn-lg mb-5 mx-auto"
+                   href=""
+                   target="_blank">
+                    Download as PDF
+
+                </a>
+                </div>
+
+    </div>
+
+
+            </div>
+        </div>

@@ -82,7 +82,6 @@ a:hover {
 .header-row{
   position:relative;
   &.project{
-
     &:before{
     transform:rotate(0deg);
   }}
@@ -112,7 +111,6 @@ a:hover {
       left:50%;
       top:50%;
       transform: translate(-50%, -50%);
-      z-index: -1;
     background-color:rgba(theme-color('primary'), 0.2);
     }
 
@@ -129,13 +127,25 @@ a:hover {
 
 
   }
+    @include media-breakpoint-down(sm){
+     img{
+       width:80px;
+       height:80px;
+     }
+      &:after{
+        width:100px;
+        height:100px;
+      }
+
+    }
 }
 
 .step-content{
   flex:1;
   margin-left:5rem;
-
-
+  @include media-breakpoint-down(sm){
+    margin-left:2rem;
+  }
 }
 
 }
@@ -149,15 +159,41 @@ margin-bottom:10rem;
 .vh-80{
   height:80vh;
 }
-.nav-link{
+
+
+.top-bar-mobile{
+  @include media-breakpoint-down(md) {
+    width:100%;
+  }
+}
+.navbar-nav .nav-link{
   color:theme-color('body');
   font-size:1.2em;
   font-weight: 700;
-  margin-left:3rem;
 
+  @include media-breakpoint-down(md) {
+    display: block;
+padding:2rem 3rem;
+    transition: background-color 0.5s;
+      &.active {
+    background-color: rgba(theme-color('primary'),0.3);
+        transition: background-color 0.5s;
+  }
+    &:hover{
+      background-color: rgba(theme-color('primary'),0.1);
+      transition: background-color 0.5s;
+
+    }
+  }
+
+@include media-breakpoint-up(lg){
+  margin-left:3rem;
+  transition: box-shadow 0.5s;
   &.active{
     box-shadow: 0 6px 0 0  theme-color('primary');
+    transition: box-shadow 0.5s;
   }
+}
 }
 body > svg {
   display: none;
@@ -166,15 +202,35 @@ body > svg {
 .learn-more-link .glyphicon {
   font-size: 16px;
 }
-.past-clients{
+.clients{
   img{
     width:200px;
     height:50px;
+    margin-bottom:4rem;
+
+    @include media-breakpoint-down(sm)
+    {
+      width:100%;
+
+    }
   }
 }
 
+h4.blue{
+  color:theme-color('primary');
+  font-weight: bold;
+  margin-bottom:3rem;
+}
+.page-main-section{
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+.skills li{
+  margin-bottom:1rem;
+}
+.section{
 
-
+}
 .btn.btn-primary{
   border:0.3rem solid darken(theme-color('primary'), 2%);
   @extend .shadow;
@@ -204,6 +260,8 @@ text-align: right;
 
   }
 
+
+
   h2{
     font-size:2em;
   }
@@ -231,11 +289,18 @@ h4{
   background-repeat:no-repeat;
   background-size:cover;
   height:630px;
-
+}
+.top-section-black-bg{
+  background-image: url("../assets/images/blue-geometric-background@3x.png");
+  -webkit-filter: grayscale(100%);
+  background-position: top center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:730px;
 }
 
 .logo {
-  width: 280px;
+
   height: 34px;
   margin-left: auto;
   margin-right: auto;
@@ -247,12 +312,15 @@ h4{
 }
 
 .clients{
-  padding-bottom:10rem;
+  padding:4rem;
   margin-bottom:10rem;
 }
 
-
-
+.max-width-sm{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 h4{
   font-weight: bold;
@@ -260,6 +328,11 @@ h4{
 
 .the-story{
 
+  h3{
+    margin-top:8rem;
+    font-size:3rem;
+    margin-bottom:2rem;
+  }
   h4{
     margin-top:5rem;
   }
@@ -280,7 +353,19 @@ margin-top:5rem;
     margin-top:2rem;
   }
 }
+.progress{
+  border:2px solid theme-color('primary');
+  background: $white;
+}
+.hover-reveal{
+  transition: opacity 0.3s;
+  opacity: 1;
+  &:hover{
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
+}
 .project-row{
   margin-bottom:15rem;
   min-height:750px;
@@ -291,8 +376,11 @@ margin-top:5rem;
   width:auto;
   text-align:center;
   height:auto;
-
-
+}
+.img-reveal{
+  left:0;
+  position:absolute;
+  z-index: -1;
 }
 .btn-primary{
   .icon{
@@ -305,10 +393,27 @@ margin-top:5rem;
     margin-left:4rem;
   }
 
-
-.radial-gradient{
-  background: radial-gradient(circle farthest-side, $white, theme-color('gray-100'));
+.underline-label{
+  font-weight: bold;
+  @extend .mx-auto;
+  display:inline-block;
+  color: theme-color('accent');
+  box-shadow: 0 10px 0 0 theme-color('accent');
+  @extend .px-2;
+  &.lila{
+    color: theme-color('lila');
+    box-shadow: 0 10px 0 0 theme-color('lila');
+  }
 }
 
+.radial-gradient{
+  background: radial-gradient(circle farthest-side,
+          theme-color('gray-100'), $white);
+}
+.screenshot{
+  border:8px solid $white;
+  box-shadow: 0 0 60px 0 rgba($black, 0.2);
+  border-radius:20px;
+}
 
 
