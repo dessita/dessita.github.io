@@ -320,6 +320,10 @@ h4{
   max-width:1000px;
   margin-left:auto;
   margin-right:auto;
+  width:100%;
+  @extend .p-5;
+  @extend .p-xl-0;
+
 }
 
 h4{
