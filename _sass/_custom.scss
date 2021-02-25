@@ -298,7 +298,13 @@ h4{
   background-position: top center;
   background-repeat:no-repeat;
   background-size:cover;
+  height:1200px;
+  @include media-breakpoint-up(sm){
+    height:1050px;
+  }
+  @include media-breakpoint-up(xl){
   height:630px;
+  }
 }
 .top-section-black-bg{
   background-image: url("../assets/images/blue-geometric-background@3x.png");
@@ -308,7 +314,12 @@ h4{
   background-size:cover;
   height:730px;
 }
-
+.consumer-subtitle-top-pic{
+  color:$white;
+  @include media-breakpoint-up(xl){
+color:theme-color('gray-800');
+  }
+}
 .logo {
 
   height: 34px;
