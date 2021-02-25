@@ -1,5 +1,5 @@
 
-//= require jquery
+
 //= require popper
 //= require util
 //= require tooltip
@@ -8,5 +8,4 @@
 //= require collapse
 //= require dropdown
 
-//= require main
 
