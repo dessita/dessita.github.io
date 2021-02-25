@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1633" height="1049" viewBox="0 0 1633 1049">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1453" height="869" viewBox="0 0 1453 869">
   <defs>
-    <filter id="Rectangle_506" x="0" y="0" width="1633" height="1049" filterUnits="userSpaceOnUse">
-      <feOffset dx="20" dy="20" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="30" result="blur"/>
-      <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#e8e8e8" stop-opacity="0"/>
       <stop offset="1" stop-color="#e8e8e8"/>
@@ -35,11 +28,11 @@
     <pattern id="pattern-7" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 128 128">
       <image width="128" height="128" xlink:href="data:image/jpeg;base64,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"/>
     </pattern>
-    <filter id="Rectangle_402" x="124" y="288" width="287" height="169" filterUnits="userSpaceOnUse">
+    <filter id="Rectangle_402" x="54" y="218" width="287" height="169" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="20" result="blur-2"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
       <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur-2"/>
+      <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
     <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
@@ -48,18 +41,16 @@
       <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
     </linearGradient>
     <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient-2"/>
-    <filter id="Rectangle_505" x="892" y="227" width="605" height="185" filterUnits="userSpaceOnUse">
+    <filter id="Rectangle_505" x="822" y="157" width="605" height="185" filterUnits="userSpaceOnUse">
       <feOffset dx="10" dy="10" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="20" result="blur-3"/>
+      <feGaussianBlur stdDeviation="20" result="blur-2"/>
       <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur-3"/>
+      <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_2010" data-name="Group 2010" transform="translate(-615 -415)">
-    <g transform="matrix(1, 0, 0, 1, 615, 415)" filter="url(#Rectangle_506)">
-      <rect id="Rectangle_506-2" data-name="Rectangle 506" width="1453" height="869" rx="30" transform="translate(70 70)" fill="#312f2f"/>
-    </g>
+  <g id="Group_2010" data-name="Group 2010" transform="translate(-685 -485)">
+    <rect id="Rectangle_506" data-name="Rectangle 506" width="1453" height="869" rx="30" transform="translate(685 485)" fill="#312f2f"/>
     <rect id="Rectangle_504" data-name="Rectangle 504" width="1418" height="832" rx="19" transform="translate(702 504)" fill="#fff"/>
     <g id="Group_2072" data-name="Group 2072">
       <g id="top-page-bg" transform="translate(727 540)">
@@ -306,8 +297,8 @@
         </g>
       </g>
       <g id="Group_2009" data-name="Group 2009" transform="translate(-365 598)">
-        <g transform="matrix(1, 0, 0, 1, 980, -183)" filter="url(#Rectangle_402)">
-          <g id="Rectangle_402-2" data-name="Rectangle 402" transform="translate(178 342)" fill="#fff" stroke="rgba(193,193,193,0.25)" stroke-width="4">
+        <g transform="matrix(1, 0, 0, 1, 1050, -113)" filter="url(#Rectangle_402)">
+          <g id="Rectangle_402-2" data-name="Rectangle 402" transform="translate(108 272)" fill="#fff" stroke="rgba(193,193,193,0.25)" stroke-width="4">
             <rect width="159" height="41" rx="20.5" stroke="none"/>
             <rect x="-2" y="-2" width="163" height="45" rx="22.5" fill="none"/>
           </g>
@@ -481,8 +472,8 @@
           <path id="Path_809" data-name="Path 809" d="M926.354,289.708c-.137.569-.381,1.111-.493,1.685a5.4,5.4,0,0,0-.072,1.176,4.525,4.525,0,0,1,.072-.662c.112-.574.356-1.115.493-1.685a2.915,2.915,0,0,0,.077-.962,3.269,3.269,0,0,1-.077.449Z" transform="translate(-905.419 -289.26)"/>
         </g>
       </g>
-      <g transform="matrix(1, 0, 0, 1, 615, 415)" filter="url(#Rectangle_505)">
-        <rect id="Rectangle_505-2" data-name="Rectangle 505" width="485" height="65" rx="32.5" transform="translate(942 277)" fill="#c4c4c4"/>
+      <g transform="matrix(1, 0, 0, 1, 685, 485)" filter="url(#Rectangle_505)">
+        <rect id="Rectangle_505-2" data-name="Rectangle 505" width="485" height="65" rx="32.5" transform="translate(872 207)" fill="#c4c4c4"/>
       </g>
       <g id="Component_188_1" data-name="Component 188 – 1" transform="translate(1566.37 699)">
         <path id="Path_20" data-name="Path 20" d="M26.006,0H441.373c14.363,0,26.006,11.145,26.006,24.893s-11.643,24.893-26.006,24.893H26.006C11.643,49.787,0,38.642,0,24.893S11.643,0,26.006,0Z" fill="#fff"/>
