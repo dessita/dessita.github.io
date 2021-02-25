@@ -58,8 +58,13 @@ a:hover {
     transform: rotate(-20deg);
     top: -5vh;
     right: -450px;
+    transition: all 1s;
     @include media-breakpoint-down(sm){
-      right: -480px;
+      right: -500px;
+      transform: rotate(0deg);
+      top: 10vh;
+      transition: all 0.5s;
+
     }
   }
 
@@ -71,10 +76,15 @@ a:hover {
     background: theme-color('primary');
     transform: rotate(-20deg);
     top: 20vh;
-    left: -450px;
+    left: -480px;
+    transition: all 1s;
 
 @include media-breakpoint-down(sm){
-  left: -480px;
+  left: -500px;
+  top: 10vh;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+
 }
   }
 }
