@@ -14,10 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bootstrap: ETIMEDOUT
-      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:141409:19)
-      at listOnTimeout (internal/timers.js:554:17)
-      at processTimers (internal/timers.js:497:7)
+  SyntaxError: /Users/desislavaslavkova/projects/dessita.github.io/package.json: Unexpected token } in JSON at position 566
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.5/libexec/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -38,15 +40,12 @@ npm manifest:
       "url": "https://github.com/dessita/issues"
     },
     "homepage": "https://github.com/dessita#readme",
-    "devDependencies": {
-  
-    },
+    "devDependencies": {},
     "dependencies": {
-      "bootstrap": "^4.5.0",
+      "bootstrap": "^4.6.0",
       "jquery": "^3.5.1",
-      "popper.js": "1.16.0"
+      "popper.js": "1.16.0",
     }
-  
   }
 
 yarn manifest: 
@@ -57,10 +56,44 @@ Lockfile:
   # yarn lockfile v1
   
   
-  bootstrap@^5.0.0-beta1:
-    version "5.0.0-beta1"
-    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.0.0-beta1.tgz#18135001a452b3ec38b344ac638a1f9549285ee7"
-    integrity sha512-UrHApw/WRmT7l2rlDdn5iXr7Jps/LlMZtJlLn9G41aGDfss48hyDeYyHtX1C6NHKVcmdUarGG+ve0LZB5iHyTQ==
+  ansi-styles@~1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-1.0.0.tgz#cb102df1c56f5123eab8b67cd7b98027a0279178"
+    integrity sha1-yxAt8cVvUSPquLZ817mAJ6AnkXg=
+  
+  async@^0.6.2:
+    version "0.6.2"
+    resolved "https://registry.yarnpkg.com/async/-/async-0.6.2.tgz#41fd038a3812c0a8bc1842ecf08ba63eb0392bef"
+    integrity sha1-Qf0DijgSwKi8GELs8IumPrA5K+8=
+  
+  bootstrap@^4.6.0:
+    version "4.6.0"
+    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
+    integrity sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
+  
+  chalk@^0.4.0:
+    version "0.4.0"
+    resolved "https://registry.yarnpkg.com/chalk/-/chalk-0.4.0.tgz#5199a3ddcd0c1efe23bc08c1b027b06176e0c64f"
+    integrity sha1-UZmj3c0MHv4jvAjBsCewYXbgxk8=
+    dependencies:
+      ansi-styles "~1.0.0"
+      has-color "~0.1.0"
+      strip-ansi "~0.1.0"
+  
+  dargs@^0.1.0:
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/dargs/-/dargs-0.1.0.tgz#2364ad9f441f976dcd5fe9961e21715665a5e3c3"
+    integrity sha1-I2Stn0Qfl23NX+mWHiFxVmWl48M=
+  
+  has-color@~0.1.0:
+    version "0.1.7"
+    resolved "https://registry.yarnpkg.com/has-color/-/has-color-0.1.7.tgz#67144a5260c34fc3cca677d041daf52fe7b78b2f"
+    integrity sha1-ZxRKUmDDT8PMpnfQQdr1L+e3iy8=
+  
+  isexe@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+    integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
   
   jquery@^3.5.1:
     version "3.5.1"
@@ -71,3 +104,31 @@ Lockfile:
     version "1.16.0"
     resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.0.tgz#2e1816bcbbaa518ea6c2e15a466f4cb9c6e2fbb3"
     integrity sha512-+G+EkOPoE5S/zChTpmBSSDYmhXJ5PsW8eMhH8cP/CQHMFPBG/kC9Y5IIw6qNYgdJ+/COf0ddY2li28iHaZRSjw==
+  
+  scsslint@0.0.3:
+    version "0.0.3"
+    resolved "https://registry.yarnpkg.com/scsslint/-/scsslint-0.0.3.tgz#46292f41c5b5b89276c0f614e95511ec277598ce"
+    integrity sha1-RikvQcW1uJJ2wPYU6VUR7Cd1mM4=
+    dependencies:
+      async "^0.6.2"
+      chalk "^0.4.0"
+      dargs "^0.1.0"
+      which "^1.0.5"
+      win-spawn "^2.0.0"
+  
+  strip-ansi@~0.1.0:
+    version "0.1.1"
+    resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-0.1.1.tgz#39e8a98d044d150660abe4a6808acf70bb7bc991"
+    integrity sha1-OeipjQRNFQZgq+SmgIrPcLt7yZE=
+  
+  which@^1.0.5:
+    version "1.3.1"
+    resolved "https://registry.yarnpkg.com/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
+    integrity sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==
+    dependencies:
+      isexe "^2.0.0"
+  
+  win-spawn@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/win-spawn/-/win-spawn-2.0.0.tgz#397a29130ec98d0aa0bc86baa4621393effd0b07"
+    integrity sha1-OXopEw7JjQqgvIa6pGITk+/9Cwc=

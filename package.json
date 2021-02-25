@@ -16,13 +16,10 @@
     "url": "https://github.com/dessita/issues"
   },
   "homepage": "https://github.com/dessita#readme",
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "1.16.0"
   }
-
 }
