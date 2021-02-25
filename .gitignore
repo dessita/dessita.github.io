@@ -4,6 +4,6 @@ _site
 .idea/*
 .idea
 .jekyll-metadata
-vendor
+vendor/bundle
 raw/consumer-portal.psd
 raw/tenant-dashboard.psd
