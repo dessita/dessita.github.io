@@ -23,7 +23,7 @@ group :jekyll_plugins do
 end
 
 
-gem "bootstrap", "~> 4.6"     # 4.xbundle up
+
 # This will help ensure the proper Jekyll version is running.
 gem "sprockets", "~> 4.0.beta7", {
     require: true
