@@ -12,10 +12,7 @@ positions:
   - job:
     position: "Multimedia Director/ Web Designer"
     company: "Advantage Services.Net | Jan 2005 - July 2011"
-    summary: "Managed and coordinated web design projects from concept through completion
-      Collaborated with clients to create vision, conceive designs and consistently meet deadlines and requirements. Successfully translated subject matter into concrete design of websites, landing pages, promotional email and other multimedia and occasional print projects.
-      Collaborated with CMS programmers, helped with the database structure and its translation to XML and optimize UI for best usability experience."
-
+    summary: "Managed and coordinated web design projects from concept through completion Collaborated with clients to create a vision, conceive designs, and consistently meet deadlines and requirements. Successfully translated subject matter into the concrete design of websites, landing pages, promotional email, and other multimedia and occasional print projects. Collaborated with CMS programmers, helped with the database structure and its translation to XML, and optimize UI for best usability experience."
 technologies:
   - techno:
     name: "HTML"
