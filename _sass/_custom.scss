@@ -48,6 +48,10 @@ a:hover {
 .overflow-x-hidden{
   overflow-x:hidden;
 }
+.my-photo{
+  border:6px solid theme-color('primary');
+
+}
 .color-blocks {
   height: 10px;
   width: 100%;
@@ -59,17 +63,23 @@ a:hover {
     position: absolute;
     width: 510px;
     height: 600px;
-    background: theme-color('lila');
-    transform: rotate(-20deg);
-    top: -5vh;
-    right: -450px;
+    background: theme-color('primary');
     transition: all 1s;
-    @include media-breakpoint-down(sm){
-      right: -500px;
-      transform: rotate(0deg);
-      top: 10vh;
-      transition: all 0.5s;
 
+    transform: rotate(0deg);
+    right: -530px;
+    top: 10vh;
+
+    @include media-breakpoint-up(lg){
+      transform: rotate(-20deg);
+      top: 5vh;
+      right: -450px;
+      transition: all 0.5s;
+    }
+    @include media-breakpoint-up(xl){
+      right: -350px;
+      top: 5vh;
+      transition: all 0.5s;
     }
   }
 
@@ -78,18 +88,18 @@ a:hover {
     position: absolute;
     width: 510px;
     height: 600px;
-    background: theme-color('primary');
-    transform: rotate(-20deg);
-    top: 20vh;
-    left: -480px;
+    background: theme-color('lila');
+
     transition: all 1s;
+    left: -530px;
+    top: 10vh;
+    transform: rotate(0deg);
+@include media-breakpoint-up(lg){
 
-@include media-breakpoint-down(sm){
-  left: -500px;
-  top: 10vh;
-  transform: rotate(0deg);
   transition: all 0.5s;
-
+  transform: rotate(-20deg);
+  top: 40vh;
+  left: -480px;
 }
   }
 }
@@ -99,7 +109,8 @@ a:hover {
   &.project{
     &:before{
     transform:rotate(0deg);
-  }}
+  }
+  }
 
   &:before{
     position:absolute;
@@ -368,7 +379,12 @@ color:theme-color('gray-800');
   @extend .p-xl-0;
 
 }
-
+.pt-6{
+  padding-top:6rem;
+}
+.pt-7{
+  padding-top:6rem;
+}
 h4{
   font-weight: bold;
 }
