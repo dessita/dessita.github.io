@@ -12,7 +12,10 @@ window.addEventListener("DOMContentLoaded", function() {
     function success() {
         form.reset();
         button.style = "display: none ";
-        status.innerHTML = "Thanks!";
+        form.style= "display:none"
+        status.innerHTML = " <p >Thank You for reaching out! </p>\n" +
+            "\n" +
+            "                <a class=\"btn btn-primary mt-5 btn-lg \" href=\"/\"> Back to Homepage</a>";
 
     }
 
