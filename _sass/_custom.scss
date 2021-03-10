@@ -107,27 +107,7 @@ a:hover {
 .text-size-20{
   font-size: 2em;
 }
-.header-row{
-  position:relative;
-  &.project{
-    &:before{
-    transform:rotate(0deg);
-  }
-  }
 
-  &:before{
-    position:absolute;
-    transform:rotate(-20deg);
-    content: " ";
-    width:1650px;
-    height:600px;
-    top:-100px;
-    right:-50px;
-    z-index: -1;
-    background-color: $gray-300;
-  }
-
-}
 .my-process{
   .icon-container{
     position:relative;
@@ -266,51 +246,29 @@ h4.blue{
   @extend .shadow;
 
 }
-.project-item{
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  padding:3rem;
-  padding-right:5rem;
-  padding-top:5rem;
-  text-align: left;
-  @include media-breakpoint-up(lg){
+.project-item {
+  margin-bottom: 6rem;
 text-align: right;
+  h2 {
+    font-size: 2em;
 
   }
-  .btn{
+
+
+
+  .btn {
+margin-top:3rem;
     align-self: flex-start;
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
       align-self: flex-end;
 
     }
-    margin-top:2rem;
-    @extend .btn-lg;
-    @extend .btn-primary;
 
   }
-
-
-
-  h2{
-    font-size:2em;
-  }
-
-  &.centered{
-    align-items:center;
-
-text-align: center;
-  }
-
-  .info-line{
-    margin-bottom:1rem;
-  }
-h4{
-  margin-top:3rem;
-  font-size:0.9em;
 }
-
-
+.project-page{
+  position:relative;
+  z-index: 10;
 }
 .top-container-over-bg{
   margin-bottom:-5rem;

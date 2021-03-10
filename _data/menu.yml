@@ -3,6 +3,9 @@ pages:
     title: "Home"
     url: "/"
   - item:
+    title: "Projects"
+    url: "/projects"
+  - item:
     title: "My Process"
     url: "/my-process"
   - item:
@@ -11,3 +14,4 @@ pages:
   - item:
     title: "Contact"
     url: "/contact"
+

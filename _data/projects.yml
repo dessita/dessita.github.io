@@ -1,13 +1,46 @@
 all:
   - project:
-    image: "tenant-dashboard@3x.png"
-    title: "Tenant Dashboard "
-    responsabilities: "All Design, HTML & SCSS. Some ECMA6 Javascript"
-    description: "A B2B React Application, built for hospitals and medical providers, currently user by Broward Health."
-    url: "/tenant-dashboard"
-  - project:
     image: "consumer-portal@3x.png"
-    title: "Consumer Portal "
-    responsabilities: "All Design, HTML & SCSS. Some jQuery Javascript "
-    description: "A B2C Rails Application, built for hospitals and medical providers, currently user by Broward Health."
+    title: "PatientClear - Consumer Portal"
+    subtitle: "Responsive web application  of Medicaid Connect System"
+    responsibilities: "All Design, HTML & SCSS. Some ECMA6 Javascript"
+    description: "Application Designed to help patients pre-qualify for medicaid and provide electronically the necessary  documentation"
+    url: "/consumer-portal"
+
+
+  - project:
+    image: "tenant-dashboard@3x.png"
+    title: "PatientClear - Tenant Dashboard"
+    subtitle: "Responsive web application of Medicaid Connect System"
+    responsibilities: "All Design, HTML & SCSS. Some jQuery Javascript "
+    description: "Application designed for health care providers to help them get more Medicaid approvals and improve their revenue. "
     url: "/tenant-dashboard"
+
+  - project:
+    image: "all-clear-decisioning@3x.png"
+    title: "All Clear Decisioning"
+    subtitle: "Company Branding"
+    responsibilities: "Designed Branding Guidelines "
+    url: "https://xd.adobe.com/view/01ffa194-81e0-4135-9a07-6419a72fdb09-54ac/"
+    target: "_blank"
+
+  - project:
+    image: "patient-clear-website@3x.png"
+    title: "PatientClear - Marketing website"
+    subtitle: "Company Branding"
+    responsibilities: "Designed Branding Guidelines "
+    url: "http://PatientClear.com"
+    target: "_blank"
+
+  - project:
+    image: "financial-apps@3x.png"
+    title: "FinancialApps - Marketing website"
+    responsibilities: "Research, designed and built it using jekyll & github pages. "
+    url: "http://financialapps.com"
+    target: "_blank"
+
+
+
+
+
+
