@@ -1,8 +1,8 @@
 $theme-colors: (
-        'primary': #03A3C9,
+        'primary': #684C8A,
         'link-color': #1f6a89,
         'accent-blue': #1f6a89,
-        'lila': #AF5497,
+        'lila': #684C8A,
         'info': #52abd3,
         'gray-100': #ebebeb,
         'gray-200': #E2E2E2,
@@ -28,12 +28,22 @@ $theme-colors: (
 $navbar-light-color: black;
 $navbar-light-hover-color: black;
 $navbar-light-active-color: theme-color('link-color');
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
 $container-max-widths: (
         sm: 750px,
         md: 768px,
         lg: 1024px,
         xl: 1360px,
 );
+
+
 
 $sans-serif-font:   'Source Sans Pro', sans-serif;
 $serif-font:   'Playfair Display', serif;
@@ -46,9 +56,13 @@ $logo-color: #212304;
 $navbar-padding-y:2rem;
 
 $btn-border-radius-lg:50px;
-$btn-padding-x-lg:2rem;
-$btn-padding-y-lg:1rem;
+$btn-border-radius:50px;
+$btn-padding-x-lg:3rem;
+$btn-padding-y-lg:0.75rem;
 $btn-border-width:0.25rem;
+
+
+
 
 
 

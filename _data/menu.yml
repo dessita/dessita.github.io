@@ -8,3 +8,6 @@ pages:
   - item:
     title: "Resume"
     url: "/resume"
+  - item:
+    title: "Contact"
+    url: "/contact"
