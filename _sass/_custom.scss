@@ -151,12 +151,12 @@ a:hover {
   }
     @include media-breakpoint-down(sm){
      img{
-       width:80px;
-       height:80px;
+       width:50px;
+       height:50px;
      }
       &:after{
-        width:100px;
-        height:100px;
+        width:80px;
+        height:80px;
       }
 
     }
@@ -347,7 +347,7 @@ z-index: 2;
   margin-left:auto;
   margin-right:auto;
   width:100%;
-  @extend .p-5;
+  @extend .p-4;
   @extend .p-xl-0;
 
 }
