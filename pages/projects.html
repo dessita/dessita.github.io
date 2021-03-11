@@ -6,22 +6,22 @@ layout: default
 ---
 <div class="container-fluid bg-light">
     <h1 class="text-center font-weight-bold "
-        style="font-size:6rem; padding-bottom:100px; padding-top:100px; margin-bottom:100px;">Projects</h1>
+        style="font-size:4rem; padding-bottom:100px; padding-top:100px; margin-bottom:100px;">Projects</h1>
 </div>
-        <div class="container-xl">
+        <div class="container-xl ">
                 {% for item in site.data.projects.all %}
             <div class="row  project-item">
-                    <div class="col col-md-6 d-flex align-items-end flex-column pr-5">
+                    <div class="col-12 col-md-6  d-flex align-items-lg-end text-lg-right flex-column  mb-5 mb-lg-0 px-5 pl-lg-0 pr-lg-5 ">
                         <h2>{{item.title}}</h2>
                         <p class="text-size-x2">{{item.subtitle}}</p>
                         <p >Responsibilities: {{item.responsibilities}}</p>
 
                         {% if item.description %}  <p >Objective: {{item.description}}</p>{% endif %}
-                        <a class="btn btn-lg btn-primary" href="{{item.url}}" target="{{item.target}} | '' ">Learn More</a>
+                        <a class="btn btn-lg btn-primary " href="{{item.url}}" target="{{item.target}} | '' ">Learn More</a>
                     </div>
 
-                    <div class="col col-md-6">
-                        <img src="assets/images/projects/{{item.image}}" class="img-fluid" />
+                    <div class="col-12 col-md-6">
+                        <img src="assets/images/projects/{{item.image}}" class="img-fluid mt-5 mt-lg-0" />
                     </div>
 
             </div>

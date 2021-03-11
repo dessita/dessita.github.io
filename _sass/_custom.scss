@@ -55,10 +55,11 @@ background: theme-color('light');
 
     background-image: url("../assets/images/purple-top.svg");
     transition: all 1s;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     transform: rotate(0deg);
     right: -10px;
-    top: -230px;
+    top: -330px;
+    z-index: -1;
     @include media-breakpoint-up(lg){
       top: -200px;
     }
@@ -71,18 +72,25 @@ background-repeat: no-repeat;
   &:after {
     content: "";
     position: absolute;
-    width: 700px;
-    height: 400px;
     background-repeat: no-repeat;
-    background-image: url("../assets/images/pastel-blue-left.svg");
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 600px 0 0;
+    border-color: theme-color('light') transparent transparent transparent;
+
     transition: all 1s;
     left: 0;
     top: -120px;
     transform: rotate(0deg);
-    z-index: 1;
-    transition: all 1s;
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+      border-color: #ACD8E2 transparent transparent transparent;
+    }
 
   }
+
   @include media-breakpoint-up(xl){
     top: 0;
   }
@@ -178,22 +186,18 @@ margin-bottom:10rem;
 .navbar-nav .nav-link{
   color:theme-color('light');
   font-size:1.2em;
-
+background: theme-color('lila');
 
   @include media-breakpoint-down(md) {
     display: block;
 padding:2rem 3rem;
     transition: background-color 0.5s;
-      &.active {
+      &.active, &:hover {
 
-    background-color: rgba(theme-color('lila'),0.3);
+    background-color: darken(theme-color('lila'),10%);
         transition: background-color 0.5s;
   }
-    &:hover{
-      background-color: darken(theme-color('lila'),10%);
-      transition: background-color 0.5s;
 
-    }
   }
 
 @include media-breakpoint-up(lg){
@@ -248,7 +252,7 @@ h4.blue{
 }
 .project-item {
   margin-bottom: 6rem;
-  text-align: right;
+
   h2 {
     font-size: 2em;
   }
