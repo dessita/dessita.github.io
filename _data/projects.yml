@@ -6,7 +6,7 @@ all:
     responsibilities: "Design, HTML & SCSS, Javascript "
     description: "Help patients pre-qualify for medicaid and provide electronically the needed documentation"
     url: "/consumer-portal"
-
+    target: "_parent"
 
   - project:
     image: "tenant-dashboard@3x.png"
@@ -15,6 +15,7 @@ all:
     responsibilities: "All Design, HTML & SCSS. Some jQuery Javascript "
     description: "Application designed for health care providers to help them get more Medicaid approvals and improve their revenue. "
     url: "/tenant-dashboard"
+    target: "_parent"
 
   - project:
     image: "all-clear-decisioning@3x.png"
