@@ -149,7 +149,7 @@ a:hover {
 
 
   }
-    @include media-breakpoint-down(sm){ 
+    @include media-breakpoint-down(sm){
      img{
        width:50px;
        height:50px;
@@ -275,8 +275,12 @@ margin-top:2rem;
   }
 }
 .project-page{
+padding-top:200px;
   position:relative;
-  z-index: 10;
+  z-index: 1;
+.main-pic{
+  border-top:10px solid theme-color('light');
+}
 }
 .top-container-over-bg{
   margin-bottom:-5rem;
