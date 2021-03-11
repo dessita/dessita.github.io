@@ -3,8 +3,8 @@ all:
     image: "consumer-portal@3x.png"
     title: "PatientClear - Consumer Portal"
     subtitle: "Responsive web application  of Medicaid Connect System"
-    responsibilities: "All Design, HTML & SCSS. Some ECMA6 Javascript"
-    description: "Application Designed to help patients pre-qualify for medicaid and provide electronically the necessary  documentation"
+    responsibilities: "Design, HTML & SCSS, Javascript "
+    description: "Help patients pre-qualify for medicaid and provide electronically the needed documentation"
     url: "/consumer-portal"
 
 
@@ -26,15 +26,16 @@ all:
 
   - project:
     image: "patient-clear-website@3x.png"
-    title: "PatientClear - Marketing website"
-    subtitle: "Company Branding"
+    title: "PatientClear.com"
+    subtitle: " Marketing website"
     responsibilities: "Designed Branding Guidelines "
     url: "http://PatientClear.com"
     target: "_blank"
 
   - project:
     image: "financial-apps@3x.png"
-    title: "FinancialApps - Marketing website"
+    title: "FinancialApps.com"
+    subtitle: " Marketing website"
     responsibilities: "Research, designed and built it using jekyll & github pages. "
     url: "http://financialapps.com"
     target: "_blank"

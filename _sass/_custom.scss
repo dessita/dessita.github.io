@@ -29,7 +29,7 @@ footer{
 }
 body, p {
   font-family:$sans-serif-font ;
-  font-size: 22px;
+  font-size: 20px;
 
 }
 main {
@@ -248,16 +248,15 @@ h4.blue{
 }
 .project-item {
   margin-bottom: 6rem;
-text-align: right;
+  text-align: right;
   h2 {
     font-size: 2em;
-
   }
 
 
 
   .btn {
-margin-top:3rem;
+margin-top:2rem;
     align-self: flex-start;
     @include media-breakpoint-up(lg) {
       align-self: flex-end;

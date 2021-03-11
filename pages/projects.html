@@ -14,8 +14,9 @@ layout: default
                     <div class="col col-md-6 d-flex align-items-end flex-column pr-5">
                         <h2>{{item.title}}</h2>
                         <p class="text-size-x2">{{item.subtitle}}</p>
-                        <p class="">Responsibilities: {{item.responsibilities}}</p>
-                        <p class="">Description: {{item.description}}</p>
+                        <p >Responsibilities: {{item.responsibilities}}</p>
+
+                        {% if item.description %}  <p >Objective: {{item.description}}</p>{% endif %}
                         <a class="btn btn-lg btn-primary" href="{{item.url}}" target="{{item.target}} | '' ">Learn More</a>
                     </div>
 
