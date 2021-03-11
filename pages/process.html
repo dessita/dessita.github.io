@@ -4,10 +4,15 @@ permalink: /my-process
 layout: default
 
 ---
+
+<div class="container-fluid bg-light">
+    <h1 class="page-title"
+        style=" margin-bottom:100px;">My Process</h1>
+</div>
+
 <div class="container-xl my-process">
     <div class="row  align-items-center px-4 px-sm-5">
         <div class="col  ">
-            <h1 class="page-title" >My Process</h1>
             <ul>
                 {% for item in site.data.process.steps %}
                 <li class="row process-step">
