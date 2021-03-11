@@ -7,6 +7,7 @@
            <img src='assets/images/dessita-ux-logo.svg'
                 class='img-responsive logo'
                 alt='dessita UX'>
+
        </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
                <img src="assets/images/svg/bars-solid.svg"
@@ -15,8 +16,8 @@
            </button>
            </div>
 
-           <div class="main-menu py-4 pr-lg-5 collapse navbar-collapse text-right" id="navbar-main">
-            <ul class="navbar-nav py-5 py-lg-0 ml-auto small">
+           <div class="main-menu collapse navbar-collapse text-right" id="navbar-main">
+            <ul class="navbar-nav pb-5 pb-lg-0 ml-auto small">
                 {% for node in site.data.menu.pages %}
                 <li class="nav-item active">
                     {% if page.url == node.url %}

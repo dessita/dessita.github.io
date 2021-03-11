@@ -58,7 +58,7 @@ background: theme-color('light');
     background-repeat: no-repeat;
     transform: rotate(0deg);
     right: -10px;
-    top: -330px;
+    top: -320px;
     z-index: -1;
     @include media-breakpoint-up(lg){
       top: -200px;
@@ -78,7 +78,8 @@ background: theme-color('light');
     height: 0;
     border-style: solid;
     border-width: 400px 600px 0 0;
-    border-color: theme-color('light') transparent transparent transparent;
+    //border-color: darken(theme-color('lila'),20%) transparent transparent transparent;
+    border-color: #ACD8E2 transparent transparent transparent;
 
     transition: all 1s;
     left: 0;
