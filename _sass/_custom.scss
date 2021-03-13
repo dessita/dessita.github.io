@@ -12,6 +12,7 @@ h1.page-title{
   font-size:4rem;
   padding-bottom:100px;
   padding-top:100px;
+  color:theme-color('gray-800');
   @include media-breakpoint-up(lg){
     font-size:4.5rem;
   }
@@ -44,6 +45,8 @@ main {
 header, main, footer {
   flex-shrink: 0;
 }
+
+
 
 
 header{
@@ -98,6 +101,27 @@ background: theme-color('light');
 
   @include media-breakpoint-up(xl){
     top: 0;
+  }
+}
+
+.clean-top header{
+
+  &:before {
+    background-image: none;
+  }
+
+  &:after {
+   border-width: 0;
+  }
+  .navbar-nav .nav-link{
+    background: transparent;
+    color:theme-color('primary');
+    &:hover{
+      background: rgba( theme-color('primary'), 0.2);
+    }
+  }
+  .bars-solid{
+    filter: invert(42%) ;
   }
 }
 .font-sans{
@@ -188,6 +212,9 @@ margin-bottom:10rem;
     width:100%;
   }
 }
+
+
+
 .navbar-nav .nav-link{
   color:theme-color('light');
   font-size:1.2em;
@@ -213,7 +240,12 @@ padding:2rem 3rem;
 
   }
 }
+
 }
+
+
+
+
 body > svg {
   display: none;
 }
@@ -275,7 +307,7 @@ margin-top:2rem;
   }
 }
 .project-page{
-padding-top:200px;
+
   position:relative;
   z-index: 1;
 .main-pic{
